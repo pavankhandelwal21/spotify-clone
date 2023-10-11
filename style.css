@@ -16,16 +16,22 @@ a {
     text-decoration: none;
 }
 .grey{
-    color: #A7A7A7;
+    color: #a7a7a7;
 }
 .black{
     color: black;
 }
+.white{
+    color: white;
+}
+.bg-white{
+    background-color: white;
+}
 .bg-black{
     background-color: black;
 }
-.padded-link{
-    padding: 10px;
+.padded-15{
+    padding: 15px;
 }
 .bold{
     font-weight: 600;
@@ -45,8 +51,9 @@ a {
 .width-120{
     width: 120px;
 }
-.transition{
+.transition:hover{
     transition: all ease 500ms;
+    color: white;
 }
 .fontsize{
     font-size: x-large;
@@ -56,6 +63,9 @@ a {
     margin-right: 8px;
     float: left;
     width: 450px;
+}
+#logo{
+    padding: 5px 15px;
 }
 .primary-card{
     background-color: var(--background-color);
@@ -127,13 +137,57 @@ a {
     padding: 0 20px;
     align-items: center;
     height: 60px;
-    backdrop-filter: blur(1px);
+    
+}
+.align{
+    align-items: center;
+    align-content: center;
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all ease 500ms;
+}
+.logo-image{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px;
+    margin: 2px;
+}
+.pmcard-icon{
+    margin-left: 2px;
+    margin-right: 20px;
+}
+.smcard-icon{
+    margin-left: 2px;
+    margin-right: 20px;
+}
+.icnsearch{
+    position: absolute; 
+    font-size: 16px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    left: 10px;
+}
+.msb:hover .icnsearch{
+    color: white;
+}
+.msb:hover .search-box{
+    border: 1px solid #3e3d3d;
 }
 .search-box{
-    padding: 15px 150px 15px 10px;
+    width: 300px;
+    padding: 15px;
+    padding-left: 40px;
     border-radius: 40px;
     border: 0;
     background-color: var(--card-bg);
+    font-family: Arial, FontAwesome;
+    color: white;
+}
+.msb{
+    position: relative; 
+    display: inline-block;
 }
 .ln-btn{
     padding: 15px 30px;
@@ -145,23 +199,27 @@ a {
     padding: 15px 30px;
 }
 .cards-list{
-    background-color: var(--background-color);  
-    padding: 20px 10px;
+    background-color: var(--background-color); 
+    padding-left: 12px; 
     display: flex;
     flex-wrap: wrap;
-    overflow: auto;
-    height: 100vh;
+    overflow:auto;
+    height: 55rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .normal-text{
     width: 100%;
     padding: 10px;
+    padding-top: 40px;
+    font-size: x-large;
     color: white;
 }
 .music-cards{
     width: 180px;
     height: 180px;
     /* background-color: blue; */
-    margin: 10px;
+    margin: 11px;
     color: white;
     border-radius: 10px;
 }
@@ -170,7 +228,19 @@ a {
     font-weight: 600;
 }
 a:hover{
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     transition: all ease 500ms;
 }
 
+
+/* Custom Scroll - CSS (Safari and Chrome) */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #555; 
+  }
